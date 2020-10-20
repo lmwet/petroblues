@@ -1,0 +1,28 @@
+{
+  "kind": "collectionType",
+  "collectionName": "textes",
+  "info": {
+    "name": "Texte",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "attributes": {
+    "paragraphe": {
+      "type": "richtext"
+    },
+    "Titre": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "richtext"
+    },
+    "category": {
+      "model": "category",
+      "via": "textes"
+    }
+  }
+}
